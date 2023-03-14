@@ -11,5 +11,73 @@
 <body>
     <header>
         <h1>Formularios</h1>
-        
-    </header>
+</header>
+ <nav>
+    <ul>
+        <li><a href="pagina principal.html">Página principal</a></li>
+        <li>Enlaces</li>
+        <li>Listas</li>
+        <li>Imágenes</li>
+        <li>Multimedia<ul>
+                <li>Vídeo</li>
+                <li>Audio</li>
+            </ul>
+        <li>HTML5 semántico</li>
+        </li>
+        <li>Tablas</li>
+    </ul>
+ </nav>
+ <main>
+    <form action="">
+        <p>
+            <fieldset>
+                <legend>Campos a validar sin expresión regular</legend>
+                <p>
+                    <label for="email">Email</label>
+                    <input type="email" type="email" id="email" placeholder="juanitoalimaña@gmail.com">
+                </p>
+                <p>
+                    <label for="fecha">Fecha de nacimiento</label>
+                    <input type="date" id="fecha" name="fecha">
+                </p>
+                <p>
+                    <label for="animales">Animales de compañia en casa</label>
+                    <input type="number" id="animales" name="animales" min="0"> 
+                </p>
+                <p>
+                    <label for="aboutyou">Describete a ti mismo en menos de 100 caracteres!</label>
+                    <textarea id="aboutyou" name="aboutyou" maxlength="100"></textarea>
+                </p>
+                <p><input type="submit" value="Validar todos los campos"></p>
+            </fieldset>
+        </p>
+    <form action="">
+        <p>
+            <fieldset>
+                <legend>Campos a validar con experesion regular</legend>
+                <p>
+                    <label for="dni">DNI de 8 numeros y 1 letra</label>
+                    <input type="text" id="dni" pattern="[0-9]{8}[A-Z]" placeholder="1234567P">
+                </p>
+                <p>
+                    <label for="nie">Un NIE</label>
+                    <input type="text" id="nie" pattern="[XYZ][0-9]{7}[A-Z]" placeholder="Z1234567E">
+                </p>
+                <p>
+                    <label for="hora">Hora (Formato 24 horas)</label>
+                    <input type="text" id="hora" placeholder="17:01:04">
+                </p>
+                <p>
+                    <label for="tlf">Telefono movil</label>
+                    <input type="text" id="tlf" placeholder="+34 123456789 | +34 123 45 67 89">
+                </p>
+                <p>
+                    <label for="date">Fecha</label>
+                    <input type="date" id="date" placeholder="17-04-1972">
+                
+                <p><input type="submit" value="Validar todos los campos"></p>
+            </fieldset>
+        </p>
+    </form>
+ </main>
+ <footer
